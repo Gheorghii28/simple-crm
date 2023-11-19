@@ -106,6 +106,9 @@
             "version": 2,
             "browserTarget": "simple-crm:build:production"
           }
+        },
+        "e2e": {
+          "builder": "@angular-builders/protractor:protractor"
         }
       }
     }
