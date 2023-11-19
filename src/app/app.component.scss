@@ -1,0 +1,50 @@
+.mat-drawer-container {
+    height: 100vh;
+}
+
+.sidenav {
+    width: 300px;
+}
+
+.logo-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    height: 56px;
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+mat-toolbar, mat-toolbar-row {
+    height: 56px;
+    min-height: 56px;
+}
+
+.menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.router-container {
+    padding-top: 16px;
+    padding-left: 56px;
+    padding-right: 56px;
+}

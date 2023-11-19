@@ -1,0 +1,29 @@
+<mat-card *ngIf="loading" class="user-detail-header">
+    <mat-card-content>
+        <button [matMenuTriggerFor]="userMenu" class="pin-right-upper-corner" mat-icon-button>
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #userMenu="matMenu">
+            <button (click)="editUserDetails()" mat-menu-item>Edit</button>
+        </mat-menu>
+        <img class="user-img" src="../../assets/img/profile-img.png" alt="">
+        <div class="user-details">
+            <h2>{{currentUser.firstName}} {{currentUser.lastName}}</h2>
+            <span>{{currentUser.email}}</span>
+        </div>
+    </mat-card-content>
+</mat-card>
+
+<mat-card *ngIf="loading" class="mt-32">
+    <mat-card-content>
+        <button [matMenuTriggerFor]="addressMenu" class="pin-right-upper-corner" mat-icon-button>
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #addressMenu="matMenu">
+            <button (click)="editAddress()" mat-menu-item>Edit</button>
+        </mat-menu>
+        <mat-card-title>Address</mat-card-title>
+        <span>{{currentUser.street}}</span><br>
+        <span>{{currentUser.zipCode}} {{currentUser.city}}</span>
+    </mat-card-content>
+</mat-card>
